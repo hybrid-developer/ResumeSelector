@@ -1,0 +1,67 @@
+ext {
+    androidMinSdkVersion = 21
+    androidTargetSdkVersion = 28
+    androidBuildToolsVersion = '28.0.3'
+    androidVersionCode = 1
+    androidVersionName = '1.0'
+
+    androidSupportLibraryVersion = '27.1.1'
+    androidConstraintLayoutLibraryVersion = '1.1.3'
+    androidMultiDexLibraryVersion = '2.0.1'
+    androidLifeCycleVersion = "1.1.1"
+    androidXAppCompatVersion = '1.0.2'
+    androidXRecyclerViewVersion = '1.0.0'
+    androidXCardViewVersion = '1.0.0'
+    androidXConstraintLayoutVersion = '1.1.3'
+    androidXLifecycleVersion = '2.0.0'
+
+    googlePlayServiceLibraryVersion = '16.1.0'
+    googleMobileServicesLibraryVersion = '4.2.0'
+    googleFirebaseCoreLibraryVersion = '16.0.4'
+    googleFirebaseMessagingLibraryVersion = '17.3.4'
+    googleFirebaseIidLibraryVersion = '17.0.0'
+    googlePlayServiceAnalyticsVersion = '16.0.8'
+    googlePlayCoreLibraryVersion = '1.4.1'
+
+    rxJavaLibraryVersion = '2.1.1'
+    rxAndroidLibraryVersion = '2.1.1'
+    rxJavaExtensionsLibraryVersion = '0.16.2'
+
+    avianeyViewPagerLibraryVersion = '2.4.1.1'
+    calligraphyLibraryVersion = '2.2.0'
+
+    retrofitLibraryVersion = '2.4.0'
+    okHttp3LibraryVersion = '3.6.0'
+    jacksonLibraryVersion = '2.8.4'
+    daggerLibraryVersion = '2.22.1'
+    javaxAnnotation = 'jsr250-api:1.0'
+    butterknifeLibraryVersion = '10.1.0'
+    apacheCommonsLibraryVersion = '3.7'
+    photoViewLibraryVersion = '2.1.3'
+    threeTenAbpLibraryVersion = '1.0.5'
+    livePersonLibraryVersion = '3.2.2'
+    shortcutBadgerVersion='1.1.21'
+    adobeTargetLibraryVersion='4.17.2'
+
+    javaxInjectionVersion = '1'
+
+    // Testing
+    findBugsToolVersion = '3.0.1'
+    mockitoLibraryVersion = '2.8.9'
+    assertJLibraryVersion = '1.7.1'
+    junitLibraryVersion = '4.12'
+    junitParamsLibraryVersion = '1.0.6'
+    espressoLibraryVersion = '3.1.1'
+    threeTenTestLibraryVersion = '1.3.5'
+    androidXTestRulesLibraryVersion = '1.1.0'
+    androidXJunitVersion = '1.0.0'
+    okhttpIdlingResourceVersion = '1.0.0'
+    androidXTestOrchestratorVersion = '1.1.0'
+    androidXUiAutomatorVersion = '2.2.0'
+
+    // Code quality
+    ktlintVersion = '0.29.0'
+
+    // Code generation
+    javaPoetVersion = '1.9.0'
+}

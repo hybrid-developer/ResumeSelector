@@ -1,0 +1,41 @@
+
+ apply from: "${rootDir}/build-library-versions.gradle"
+android {
+    compileSdkVersion androidTargetSdkVersion
+    buildToolsVersion androidBuildToolsVersion
+    defaultConfig {
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+        versionCode androidVersionCode
+        versionName androidVersionName
+
+        //If running the tests in AS fail, because it's unable to find instrumentation for AndroidJUnitRunner, do this:
+        //Run > Edit Configurations > Delete everything under Android Instrumentation Tests
+       // testInstrumentationRunner 'com.mobile.test.NgaUiTestRunner'
+
+        // The following argument makes the Android Test Orchestrator run its
+        // "pm clear" command after each test invocation. This command ensures
+        // that the app's state is completely cleared between tests.
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+    }
+
+    flavorDimensions "app"
+    buildTypes {
+        qa {
+            matchingFallbacks = ['qa', 'prod']
+        }
+        prod {
+            matchingFallbacks = ['prod', 'qa']
+        }
+    }
+
+    sourceSets {
+        //This is necessary, otherwise no R/B NGA,... specific test folders are marked as tests
+        testQa {
+            java.srcDirs += ["./src/qa/test"]
+        }
+        testProd {
+            java.srcDirs += ["./src/prod/test"]
+        }
+    }
+}
