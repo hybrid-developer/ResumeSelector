@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Resume Collection</string>
+
+    <string-array name="resumeCategoriesArray">
+        <item>Work Experience</item>
+        <item>Educational Qualifications</item>
+        <item>Skills</item>
+        <item>Publications</item>
+        <item>References</item>
+    </string-array>
+
+    <integer-array name="categoryIcons">
+        <item>@drawable/work_icon</item>
+        <item>@drawable/education_icon</item>
+        <item>@drawable/skills_icon</item>
+        <item>@drawable/publications</item>
+        <item>@drawable/reference_icon</item>
+    </integer-array>
+
+    <!-- Profile -->
+    <string name="nameLabel">Name : </string>
+    <string name="emailLabel">Email : </string>
+    <string name="websiteLabel">Web :</string>
+    <string name="phoneLabel">Phone :</string>
+    <string name="descriptionLabel">Description :</string>
+</resources>

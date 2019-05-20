@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fragment_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/publicationName"
+        style="@style/TextAppearance.ListItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+
+    <TextView
+        android:id="@+id/publicationPublisher"
+        style="@style/TextAppearance.ListItemSecondaryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+
+    <TextView
+        android:id="@+id/publicationReleaseDate"
+        style="@style/TextAppearance.ListItemDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+
+    <TextView
+        android:id="@+id/publicationWebsite"
+        style="@style/TextAppearance.ListItemDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fragment_margin"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+
+    <TextView
+        android:id="@+id/publicationSummary"
+        style="@style/TextAppearance.ListItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_8"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+</LinearLayout>

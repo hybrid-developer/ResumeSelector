@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fragment_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/workCompanyName"
+        style="@style/TextAppearance.ListItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+
+    <TextView
+        android:id="@+id/workPosition"
+        style="@style/TextAppearance.ListItemSecondaryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+
+    <TextView
+        android:id="@+id/workWebsite"
+        style="@style/TextAppearance.ListItemDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+
+    <LinearLayout
+        android:id="@+id/workDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical">
+
+        <TextView
+            android:id="@+id/workStartDate"
+            style="@style/TextAppearance.ListItemDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nameLabel"
+            tools:text="StartDate : " />
+
+        <TextView
+            android:id="@+id/workPlaceHolder"
+            style="@style/TextAppearance.ListItemDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            tools:text=" -  " />
+
+        <TextView
+            android:id="@+id/workEndDate"
+            style="@style/TextAppearance.ListItemDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="End Date" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/workSummary"
+        style="@style/TextAppearance.ListItemDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fragment_margin"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+
+    <TextView
+        android:id="@+id/workHighlights"
+        style="@style/TextAppearance.ListItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_8"
+        android:gravity="center_vertical"
+        tools:text="Calvin Klien" />
+</LinearLayout>

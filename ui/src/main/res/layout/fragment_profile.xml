@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profileDetailLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fragment_margin"
+        android:layout_marginTop="@dimen/fragment_margin"
+        android:layout_marginEnd="@dimen/fragment_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profileCandidateAvatar"
+            android:layout_width="@dimen/list_item_image_view_width"
+            android:layout_height="@dimen/list_item_image_view_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/candidateDetailsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fragment_margin"
+            android:foregroundGravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/profileCandidateAvatar"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/profileCandidateNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_details_item_height"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <TextView
+                    android:id="@+id/profileCandidateNameLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nameLabel"
+                    android:textStyle="bold"
+                    tools:text="Name : " />
+
+                <TextView
+                    android:id="@+id/profileCandidateName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    tools:text="Candidate Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profileCandidateEmailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_details_item_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileCandidateNameLayout">
+
+                <TextView
+                    android:id="@+id/profileCandidateEmailLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/emailLabel"
+                    android:textStyle="bold"
+                    tools:text="Email : " />
+
+                <TextView
+                    android:id="@+id/profileCandidateEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    tools:text="abc@gmail.com" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/profileCandidatePhoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_details_item_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileCandidateEmailLayout">
+
+                <TextView
+                    android:id="@+id/profileCandidatePhoneLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/phoneLabel"
+                    android:textStyle="bold"
+                    tools:text="Phone : " />
+
+                <TextView
+                    android:id="@+id/profileCandidatePhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    tools:text="(0044) 7668163614" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profileCandidateWebLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_details_item_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileCandidatePhoneLayout">
+                <TextView
+                    android:id="@+id/profileCandidateWebLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/websiteLabel"
+                    android:textStyle="bold"
+                    tools:text="Web : " />
+
+                <TextView
+                    android:id="@+id/profileCandidateWeb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    tools:text="www.zavaitar.com" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/profileCandidateSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_vertical_margin_lower"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/candidateDetailsLayout"
+            tools:text="Summary goes hear" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ExpandableListView
+        android:id="@+id/resumeCategoryRecycleView"
+        android:layout_marginTop="@dimen/fragment_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileDetailLayout"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

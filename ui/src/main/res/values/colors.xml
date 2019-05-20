@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="green">#097155</color>
+    <color name="black">#000000</color>
+    <color name="mid_blue_10">#9E307548</color>
+
+    <color name="colorListItemTitle">@color/green</color>
+    <color name="colorListItemDefault">@color/mid_blue_10</color>
+    <color name="colorListItemDescription">@color/colorPrimaryDark</color>
+    <color name="colorListItemEmail">@color/black</color>
+</resources>
