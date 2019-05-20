@@ -1,4 +1,4 @@
-# Sample App: Kotlin-MVP-Dagger2
+# ResumeSelector Kotlin-MVP-Dagger2
 
 <a href="https://medium.com/@ogulcan/kotlin-mvp-dagger-2-retrofit-sample-android-application-e6fe3af7acd" target="_blank"><img src="https://cdn-images-1.medium.com/max/2000/1*Ia4dK-kcaSfztzHIhtMmaQ.png" alt="Kotlin + MVP + Dagger + Retrofit + RxJava2" width="800"></a>
 
